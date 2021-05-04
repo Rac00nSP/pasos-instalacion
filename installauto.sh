@@ -49,4 +49,6 @@ apt-get install ranger -y  #fzf iprugner
 git clone https://github.com/p0ch4t/htbExplorer.git 
 
 cd htbExplorer && ./htbExplorer #recordar introducir el api key en las variables globales dentro del archivo htbExlorer
-
+ 
+ #scrub
+ apt install scrub
