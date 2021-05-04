@@ -33,8 +33,9 @@ sudo usermod --shell /usr/bin/zsh usuarios
 su && apt update && apt upgrade
 cd /home/usuario/Descargas                  #aqui
 wget https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd-musl_0.20.1_amd64.deb #descargar lsd .bat
-wget https://github.com/zsh-users/zsh-autmv /home/jack/Descargas/lsd-musl_0.20.1_amd64.deb .osuggestions/archive/refs/tags/v0.6.4.zip #descargar zsh-autosuggestions  zip
-wget https://github.com/zsh-users/zsh-syntax-highlighting/archive/refs/tags/0.8.0-alpha1-pre-redrawhook.zip #descargar zsh-syntax-highlighting zip
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh  #descargar zsh-autosuggestions  zip
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git #descargar zsh-syntax-highlighting zip
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 wget https://github.com/sharkdp/bat/releases/download/v0.18.0/bat_0.18.0_amd64.deb  #descarga bat
 cd / && cd opt && mv /home/jack/Descargas/lsd-musl_0.20.1_amd64.deb . && mv /home/jack/Descargas/zsh-syntax-highlighting-0.8.0-alpha1-pre-redrawhook.zip . &&  mv /home/jack/Descargas/zsh-autosuggestions-0.6.4.zip . && mv /home/jack/Descargas/bat_0.18.0_amd64.deb .  
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
