@@ -51,4 +51,12 @@ git clone https://github.com/p0ch4t/htbExplorer.git
 cd htbExplorer && ./htbExplorer #recordar introducir el api key en las variables globales dentro del archivo htbExlorer
  
  #scrub
+ cd 
+ 
+ git clone https://github.com/Und3rf10w/kali-anonsurf.git
+ 
+ cd kali-anonsurf 
+ 
+ ./installer.sh
+ 
  apt install scrub
