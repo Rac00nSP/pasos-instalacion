@@ -59,4 +59,6 @@ cd htbExplorer && ./htbExplorer #recordar introducir el api key en las variables
  
  ./installer.sh
  
+ apt install xclip -y 
+ 
  apt install scrub
