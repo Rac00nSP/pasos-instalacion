@@ -61,4 +61,12 @@ cd htbExplorer && ./htbExplorer #recordar introducir el api key en las variables
  
  apt install xclip -y 
  
- apt install scrub
+ apt install scrub -y
+ 
+ git clone https://github.com/urbanadventurer/WhatWeb.git
+ 
+ cd WhatWeb && make install
+ 
+ 
+
+ 
